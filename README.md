@@ -121,20 +121,18 @@ __Done__
 - Build containers from Dockerfile + puppet manifest
 - Start services from docker-compose.yml
 - Flexible data storage support (local-dict/filesystem/. Not redis for the moment).
-
-__Working on__
 - Docker registry support (push and pull)
 - Substitute docker-compose calls for native python calls.
 - Deploy on remote host support
+__Working on__
 - Cluster support: create a swarm cluster, deploy on swarm cluster
 
 __Issues__
-- Docker-registry: Trying to adopt the latest docker registry. At the moment there are problem with the certificates when registry is in different host (uses HTTPS in that case) than the image which I am trying to push. (Following this https://docs.docker.com/registry/deploying/)
-![registry status](/readmeResources/registry.png)
+
 
 ## Roadmap
-
 - General refactoring
+- Provision VM remotely
 - Distributed building
 - Docker-swarm complete support
   - add nodes to the cluster dynamically
