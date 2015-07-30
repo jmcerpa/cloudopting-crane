@@ -113,6 +113,23 @@ Execute 'python commander.py' in '/commander' with an user allowed to interact w
 
 You can use your favourite browser to navigate to `http://127.0.0.1:8888`. It will show a _swagger UI_ interface with all the API specification.
 
+## Setup test environment
+
+Since there are complex test that envolves several hosts (like deployment tests), it is convenient to have a place like this where explain how to setup a proper environment for testing.
+
+For this testing environment it is needed:
+- virtualbox
+- vagrant
+- a more or less powerful computer with virtualizarion support
+- good internet connection
+- patience
+
+### Create virtual machine with vagrant
+
+### Provision virtual machine
+
+__working on it...__
+
 ## On the desk
 
 __Done__
@@ -124,7 +141,9 @@ __Done__
 - Docker registry support (push and pull)
 - Substitute docker-compose calls for native python calls.
 - Deploy on remote host support
+
 __Working on__
+- Automatic tests for deployment
 - Cluster support: create a swarm cluster, deploy on swarm cluster
 
 __Issues__
